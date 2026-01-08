@@ -1,6 +1,6 @@
 # Task Tracker CLI
 
-![TypeScript](https://img.shields.io/badge/TypeScript-89. 2%25-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-89.2%25-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-10.8%25-yellow)
 
 Uma aplicação CLI (Command Line Interface) para gerenciar suas tarefas e listas de to-do diretamente do terminal. Projeto desenvolvido como parte do [Task Tracker Challenge do roadmap.sh](https://roadmap.sh/projects/task-tracker).
