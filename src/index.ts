@@ -1,20 +1,21 @@
 #!/usr/bin/env node
 
 import { Command } from "commander";
+import { registerAddCommand } from "./commands/AddCommand.js";
+import { registerListCommand } from "./commands/ListCommand.js";
+import { registerUpdateCommand } from "./commands/UpdateCommand.js";
+import { registerMarkCommand } from "./commands/MarkCommand.js";
 
 const program = new Command();
 
-interface AddOptions {
-	description?: string;
-}
-
 program
-	.command("add")
-	.argument("<task>", "task to add")
-	.option("-d, --description <description>", "description of task")
-	.action((task: string, options: AddOptions) => {
-		console.log(`task: '${task}'`);
-		console.log(`description: '${options.description}'`);
-	});
+	.name("task-cli")
+	.description("cli para gerenciar minhas tarefas")
+	.version("1.0.2");
+
+registerAddCommand(program);
+registerListCommand(program);
+registerUpdateCommand(program);
+registerMarkCommand(program);
 
 program.parse(process.argv);
