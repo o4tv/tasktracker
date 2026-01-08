@@ -16,6 +16,7 @@ export function registerMarkCommand(program: Command) {
 				console.log(`Título da tarefa: '${updatedTask.title}'`);
 				if (updatedTask.description)
 					console.log(`Descrição da tarefa: '${updatedTask.description}'`);
+				console.log(`status da tarefa: '${updatedTask.description}'`);
 			} catch (err: unknown) {
 				console.error(err);
 			}

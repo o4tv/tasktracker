@@ -16,6 +16,7 @@ export function registerAddCommand(program: Command) {
 				console.log(`Título da tarefa: '${newTask.title}'`);
 				if (newTask.description)
 					console.log(`Descrição da tarefa: '${newTask.description}'`);
+				console.log(`status da tarefa: '${newTask.description}'`);
 			} catch (err: unknown) {
 				console.error(err);
 			}

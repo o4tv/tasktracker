@@ -14,7 +14,7 @@ export function registerListCommand(program: Command) {
 				console.log("nenhuma tarefas na lista");
 				return;
 			}
-			console.log(JSON.stringify(tasks, null, 2));
+
 			console.table(tasks);
 		});
 }
